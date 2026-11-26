@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A7FF541930B8FD4E00CFA7BA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A7FF541830B8FD4E00CFA7BA /* Kingfisher */; };
+		A7FF541C30B8FD7600CFA7BA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A7FF541B30B8FD7600CFA7BA /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6BF7A3F930B7861200F1F101 /* AchouFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AchouFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7FF541930B8FD4E00CFA7BA /* Kingfisher in Frameworks */,
+				A7FF541C30B8FD7600CFA7BA /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = AchouFood;
 			packageProductDependencies = (
+				A7FF541830B8FD4E00CFA7BA /* Kingfisher */,
+				A7FF541B30B8FD7600CFA7BA /* SnapKit */,
 			);
 			productName = AchouFood;
 			productReference = 6BF7A3F930B7861200F1F101 /* AchouFood.app */;
@@ -107,6 +116,10 @@
 			);
 			mainGroup = 6BF7A3F030B7861200F1F101;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A7FF541730B8FD4E00CFA7BA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				A7FF541A30B8FD7600CFA7BA /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6BF7A3FA30B7861200F1F101 /* Products */;
 			projectDirPath = "";
@@ -349,6 +362,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A7FF541730B8FD4E00CFA7BA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.16.0;
+			};
+		};
+		A7FF541A30B8FD7600CFA7BA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A7FF541830B8FD4E00CFA7BA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7FF541730B8FD4E00CFA7BA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		A7FF541B30B8FD7600CFA7BA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7FF541A30B8FD7600CFA7BA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6BF7A3F130B7861200F1F101 /* Project object */;
 }
